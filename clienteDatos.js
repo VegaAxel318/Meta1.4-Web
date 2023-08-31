@@ -18,6 +18,7 @@ const servicio = require("./servicioDatos");
 //     })
 // });
 
+//Utilizando async/await
 async function obtenerDatos() {
     try {
         await servicio.getDatos(1, 1000);

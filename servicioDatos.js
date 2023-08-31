@@ -1,4 +1,4 @@
-let finDeTransmisionDeDatos = function(id,callback){
+let finDeTransmisionDeDatos = function(id){
     return new Promise((resolve) => {
         console.log('Transferencia',id,'terminada');
         resolve();
@@ -15,13 +15,5 @@ let obtenDatosDeInternet = function(id, duracion) {
         }, duracion);
     });
 };
-
-const promesa = function() {
-    return new Promise(function(resolve,reject) {
-            resolve("Resultado esperado");
-            reject("Resultado no esperado");
-    });
-}
-
 
 module.exports.getDatos = obtenDatosDeInternet;
